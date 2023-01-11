@@ -26,9 +26,16 @@
         </header>
         <div class="entrada">
             <form>
-                <div class="botones">
-                <input type="submit" id="btnEncriptar"value="Encriptar" class="btn-encriptar">
-                <input type="submit" value="Desencriptar" class="btn-desencriptar">
+               
+                <div class="advertencia0">
+                  <div>
+                    <label class="advertencia">sin acentos y Solo minusculas</label>
+                  </div>
+                  <div class="botones">
+                    <input type="text" placeholder="Ingrese el texto aqui" class="ingreseTexto">
+                    <input type="submit" id="btnEncriptar"value="Encriptar" class="btn-encriptar">
+                    <input type="submit" value="Desencriptar" class="btn-desencriptar">
+                  </div>
                 </div>
             </form>
 
@@ -48,10 +55,12 @@
 <script>
     const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
     function cambiaTema(ev){
+       console.log("entre");
+       console.log(ev.target.checked)
         if(ev.target.checked){
-            document.documentElement.setAttribute('tema', 'dark');
+            document.documentElement.setAttribute('tema', 'oscuro');
         } else {
-            document.documentElement.setAttribute('tema', 'light');
+            document.documentElement.setAttribute('tema', 'claro');
         }
     }
     colorSwitch.addEventListener('change', cambiaTema);
