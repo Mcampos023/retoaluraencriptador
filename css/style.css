@@ -1,11 +1,26 @@
 :root {
     --color-fuente: #000;
     --color-fondo: #F3F5FC;
+    --btn-color-fuente:#fff;
+    --btn-color-fondo1:#0A3871;
+    --btn-color-fondo2:#707780;
+
 }
 
-[tema="light"]{
+[tema="oscuro"]{
     --color-fuente: #000;
     --color-fondo: #fff;
+    --btn-color-fuente:#fff;
+    --btn-color-fondo1:#000;
+    --btn-color-fondo2:#000;
+}
+
+[tema="claro"]{
+    --color-fuente: #000;
+    --color-fondo: #F3F5FC;
+    --btn-color-fuente:#fff;
+    --btn-color-fondo1:#0A3871;
+    --btn-color-fondo2:#707780;
 }
 
 body{
@@ -137,7 +152,7 @@ header {
 
     /* Dark blue/dark-blue-300 */
 
-    background: #0A3871;
+    background: var(--btn-color-fondo1);
     border-radius: 24px;
 
     /* Inside auto layout */
@@ -177,7 +192,8 @@ height: 67px;
 
 /* Light gray */
 
-background: #707780;
+/*background: #707780;*/
+background: var(--btn-color-fondo2);
 /* Dark blue/dark-blue-300 */
 
 border: 1px solid #0A3871;
@@ -257,9 +273,7 @@ color: #FFFFFF;
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+       transform: translateX(26px);
   }
 
   .slider.round {
@@ -269,6 +283,74 @@ color: #FFFFFF;
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .advertencia0{
+   /*  display: flex;
+    flex-direction: row;
+   align-items: flex-start;
+    padding: 0px;
+    gap: 24px;*/
+
+   /* position: relative;*/
+    width: 205px;
+    height: 18px;
+    left: 240px;
+    top: 885px;
+}
+
+.advertencia {
+    /*display: inline-block;*/
+    width: 205px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+
+    opacity: 0.8;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.ingreseTexto{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+
+
+    /* Dark blue/dark-blue-300 */
+
+    color: #0A3871;
+    text-transform: lowercase;
+}
+
+
+
+
+
+
 /*viejo   */
 
 
