@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css"
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-        <script src="js/index.js"></script>
     </head>
     <body>
         <header>
@@ -18,7 +17,6 @@
                     <input type="checkbox">
                     <span class="slider round"></span>
                   </label>
-                  <h1>Caronte Web Studio</h1>
                 </div>
               </div>
 
@@ -47,4 +45,15 @@
         </div>
         
 </body>
+<script>
+    const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+    function cambiaTema(ev){
+        if(ev.target.checked){
+            document.documentElement.setAttribute('tema', 'dark');
+        } else {
+            document.documentElement.setAttribute('tema', 'light');
+        }
+    }
+    colorSwitch.addEventListener('change', cambiaTema);
+</script>
 </html>
