@@ -1,6 +1,6 @@
 :root {
-    --color-fuente: #ffffff;
-    --color-fondo: #000;
+    --color-fuente: #000;
+    --color-fondo: #F3F5FC;
 }
 
 [tema="light"]{
