@@ -94,6 +94,8 @@ header {
     top: 619px;
 }
 
+
+
 .sin-mensaje{
     width: 336px;
     height: 58px;
@@ -219,8 +221,29 @@ color: #FFFFFF;
 
 }
 
+.textareaTexto {
+position:absolute;  
+width: 50%;
+  height: 450px;
+  left: 240px;
+  top: 168px;
 
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%; 
+  color: #0A3871;
+  text-transform: lowercase;
+  overflow: hidden;
 
+}
 
 
 
