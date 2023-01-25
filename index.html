@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css"
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <header>
@@ -25,14 +26,15 @@
             </div>
         </header>
         <div class="entrada">
-            <form>
-                    <textarea name="textarea" placeholder="Ingrese el texto aqui" rows="15" cols="50" class="textareaTexto"></textarea>
+            <form class =formulario>
+                    
+                    <textarea name="textarea" id="txtarea" placeholder="Ingrese el texto aqui" rows="15" cols="50" class="textareaTexto" onkeyup="quitaacentos()"></textarea>
                     
                     <div class="advertencia0">
-                  <div>
-                    <label class="advertencia">sin acentos y Solo minusculas</label>
-                  </div>
-                </div>
+                      <div>
+                        <label class="advertencia">sin acentos y Solo minusculas</label>
+                      </div>
+                    </div>
 
                   <div class="botones">
                     <input type="submit" id="btnEncriptar"value="Encriptar" class="btn-encriptar">
@@ -54,6 +56,7 @@
         </div>
         
 </body>
+<script src="js/index.js"></script>
 <script>
     const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
     function cambiaTema(ev){

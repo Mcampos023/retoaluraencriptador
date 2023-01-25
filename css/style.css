@@ -129,6 +129,11 @@ header {
 
 }
 
+.formulario{
+    display: flex;      
+    flex-direction: column;
+}
+
 .botones{
     display: flex;
     flex-direction: row;
@@ -242,6 +247,8 @@ width: 50%;
   color: #0A3871;
   text-transform: lowercase;
   overflow: hidden;
+  order:1;
+
 
 }
 
@@ -319,6 +326,8 @@ width: 50%;
     height: 18px;
     left: 240px;
     top: 885px;
+    order: 2;
+
 }
 
 .advertencia {

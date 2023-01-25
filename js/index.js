@@ -1,12 +1,15 @@
-const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
-            function cambiaTema(ev){
-                console.log("funcion");
-                if(ev.target.checked){
-                    document.documentElement.setAttribute('tema', 'light');
-                    console.log("if");
-                } else {
-                    document.documentElement.setAttribute('tema', 'dark');
-                    console.log("else");
-                }
-            }
-            colorSwitch.addEventListener('change', cambiaTema);
+function quitaacentos(){    
+    var x = document.getElementById("txtarea").value;
+    document.getElementById("txtarea").value = sincaracteresespeciales(x);    
+      
+}
+
+
+const sincaracteresespeciales = (str) => {
+	return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '') // para acentos
+		//.replace(/([^\w]+|\s+)/g, '-') // sin espacios este lo quito mejor
+		.replace(/\-\-+/g, '-')	// sin saltos
+		.replace(/(^-+|-+$)/g, ''); // sin cosas otros caracteres al final
+}
+
+
