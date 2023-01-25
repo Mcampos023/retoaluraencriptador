@@ -13,5 +13,8 @@ function sincaracteresespeciales(str) {
         .replace(/(^-+|-+$)/g, ''); // sin cosas otros caracteres al final
 }
 
-
+function encriptar(str) {
+    str.replace('e','enter');
+    
+}
 
